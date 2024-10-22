@@ -5,7 +5,7 @@ import json
 
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-model = AutoModelForSequenceClassification.from_pretrained('fastival_model', num_labels=2)
+model = AutoModelForSequenceClassification.from_pretrained('saved_model', num_labels=2)
 model.to(device)
 tokenizer = AutoTokenizer.from_pretrained("beomi/KcELECTRA-base")
 

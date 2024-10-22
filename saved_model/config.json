@@ -1,5 +1,5 @@
 {
-  "_name_or_path": "beomi/KcELECTRA-base",
+  "_name_or_path": "fastival_model",
   "architectures": [
     "ElectraForSequenceClassification"
   ],
