@@ -9,5 +9,4 @@
 
 ## How to run?
 ### docker build -t to_you .
-### docker run -d to_you && xdg-open http://127.0.0.1:8000/docs
-
+### docker run -p 8000:8000 -e PORT=8000 to_you && xdg-open http://0.0.0.0:8000/docs
