@@ -7,5 +7,7 @@
 
 
 
-###  Start : uvicorn main:app --reload -> http://127.0.0.1:8000/docs
+## How to run?
+### docker build -t to_you .
+### docker run -d to_you && xdg-open http://127.0.0.1:8000/docs
 
