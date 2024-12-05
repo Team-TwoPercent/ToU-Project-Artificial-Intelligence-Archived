@@ -10,5 +10,5 @@ COPY . /app
 # Python 의존성 설치
 RUN pip install --no-cache-dir -r requirements.txt
 
-# 컨테이너 실행 시 Python 애플리케이션 시작
-CMD ["uvicorn", "main:app", "--reload"]
+# Uvicorn 실행 명령 설정
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
